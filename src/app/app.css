@@ -1,0 +1,15 @@
+#icon {
+  opacity: 1;
+}
+
+#text {
+  opacity: 0;
+}
+
+#parent:hover #icon {
+  opacity: 0;
+}
+
+#parent:hover #text {
+  opacity: 1;
+}
