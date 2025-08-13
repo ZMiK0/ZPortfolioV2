@@ -6,7 +6,7 @@
 @import "tailwindcss";
 
 @theme {
-    --color-bg: #303030;
+    --color-bg: #212121;
     --color-zgreen: #5AEB4C;
 
     --font-menu: "Quantico";
