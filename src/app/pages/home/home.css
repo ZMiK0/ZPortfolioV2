@@ -6,10 +6,23 @@
   opacity: 0;
 }
 
+#parent:hover {
+  animation-name: hoover;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
 #parent:hover #icon {
   opacity: 0;
 }
 
 #parent:hover #text {
   opacity: 1;
+}
+
+@keyframes hoover {
+  0% {bottom: 0px;}
+  25% {bottom: 10px;}
+  75% {bottom: -10px;}
+  100% {bottom: 0px;}
 }
