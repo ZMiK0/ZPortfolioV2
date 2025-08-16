@@ -11,5 +11,6 @@ export class Repo {
   @Input() title!:string;
   @Input() text!:string;
   @Input() img!:string;
+  @Input() url!:string;
 
 }
