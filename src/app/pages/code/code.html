@@ -1,10 +1,15 @@
 <div class="flex flex-col justify-center items-center py-10 h-full font-code">
+    <a href="/">
+        <div class="top-14 left-0 absolute bg-bg shadow-zgreen hover:shadow-md fill-white border-2 border-white hover:border-zgreen border-l-0 size-20 hover:scale-105 duration-200 hover:duration-200 transform">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg>
+        </div>
+    </a>
 
     <h1 class="text-8xl">Featured Code</h1>
 
     <div class="gap-40 grid grid-cols-2 mx-2 mt-10">
         <app-repo-big title="Musy App" text="Multiplatform desktop open-source offline music player, built in Tauri with Rust and Angular" img="Musy.png" url="https://github.com/ZMiK0/Musy-app"></app-repo-big>
-        <app-repo-big></app-repo-big>
+        <app-repo-big title="Litter Torneo II" text="Webpage made for the 2º videogame tournament made in my school" img="IIt.png" url="https://github.com/Emanuel-Hosu/Web-Torneo-De-Interciclos-de-videojuegos"></app-repo-big>
     </div>
 
     <hr class="my-10 w-10/12 text-white">
@@ -12,14 +17,7 @@
     <h1 class="text-6xl">Code Repository</h1>
 
     <div class="gap-10 grid grid-cols-3 mx-10 mt-10">
-        <app-repo title="JavaLator" text="Simple Java calculator made with swing" img="blank.jpg" url="https://github.com/ZMiK0/JaLator"></app-repo>
-        <app-repo></app-repo>
-        <app-repo></app-repo>
-        <app-repo></app-repo>
-        <app-repo></app-repo>
-        <app-repo></app-repo>
-        <app-repo></app-repo>
-
+        <app-repo *ngFor="let repo of repo_info" [title]="repo[0]" [text]="repo[1]" [img]="repo[2]" [url]="repo[3]"></app-repo>
     </div>
 
 </div>
